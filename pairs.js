@@ -19,7 +19,23 @@
 ****************************************************************/
 function pairs(names) {
   // Your code goes here
+  names = names || [];
+let pair =[];
+if (names){
+for (let i=names.length; i>0; i-=2){
+  if(i>1){
+pair1 = [names.getRandom(),names.getRandom()];
+  }else{
+pair1 = [names.getRandom()];
+  }
+pair.push (pair1);
+}}else{
+  pair = names;
 }
+return pair;
+}
+pairs()
+
 
 export default pairs;
 
